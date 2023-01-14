@@ -1,0 +1,11 @@
+[project]
+requires-python = ">=3.10"
+dependencies = [
+    "deepdanbooru-onnx>=0.0.8",
+    "fastapi>=0.89.1",
+    "pillow>=9.4.0",
+    "uvicorn[standard]>=0.20.0",
+    "python-multipart>=0.0.5",
+]
+
+[tool.pdm]
