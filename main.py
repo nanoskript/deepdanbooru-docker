@@ -3,11 +3,13 @@ import os
 
 from fastapi import FastAPI, File
 from pydantic import BaseModel
+from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
 from deepdanbooru_onnx import DeepDanbooru
 from PIL import Image
 
 app = FastAPI(title="deepdanbooru-docker")
+app.add_middleware(CORSMiddleware, allow_origins=["*"])
 threshold = float(os.environ.get("DEEPDANBOORU_THRESHOLD") or "0.5")
 deepdanbooru = DeepDanbooru(threshold=threshold)
 
