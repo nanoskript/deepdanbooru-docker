@@ -1,8 +1,8 @@
 # deepdanbooru-docker
 
 [Docker Hub](https://hub.docker.com/r/nanoskript/deepdanbooru)
-| [API documentation](https://deepdanbooru.nanoskript.dev/docs)
-| [Web tool](https://nanoskript.dev/tools/deepdanbooru/)
+| [API documentation](https://deepdanbooru.nsk.sh/docs)
+| [Web tool](https://nsk.sh/tools/deepdanbooru/)
 
 Docker service for <https://github.com/KichangKim/DeepDanbooru>.
 
