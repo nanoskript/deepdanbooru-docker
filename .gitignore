@@ -1,0 +1,4 @@
+.DS_Store
+.venv/
+.pdm-python
+__pycache__/

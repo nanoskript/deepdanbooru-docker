@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.13-slim-trixie
 
 RUN pip install --no-cache-dir pdm
 ADD ./pyproject.toml ./pdm.lock ./

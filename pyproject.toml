@@ -1,5 +1,5 @@
 [project]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "deepdanbooru-onnx>=0.0.8",
     "fastapi>=0.89.1",
