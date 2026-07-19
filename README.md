@@ -28,3 +28,12 @@ docker run --env DEEPDANBOORU_THRESHOLD=0.0 ...
 ```
 
 By default, this is set to `0.5`.
+
+The threshold can also be overridden on a per-request basis with the
+`threshold` query parameter (a value between `0` and `1` inclusive):
+
+```
+curl -X POST -F "image=@image.png" "https://deepdanbooru.nsk.sh/deepdanbooru?threshold=0.2"
+```
+
+A threshold of `0` returns scores for all tags.
